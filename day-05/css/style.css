@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+25&display=swap');
+
+
+*,html{
+    margin:0;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.navSettings{
+    /* width:100%; */
+    /* margin:50px;
+    padding:30px; */
+    height:100px;
+    background-color: #e8f22e;
+}
+.navSettings > a{
+
+}
+p,
+.mainSettings{
+    /* height:600px; */
+    width:80%;
+    /* background-color: #e8f6f0; */
+    margin: auto;
+    /* overflow: hidden; */
+    /* text-align: center; */
+}
+.siteName{
+   
+        font-family: "Jersey 25", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        font-size: 60px;
+        text-align: center;
+        /* background-color: rgba(24, 21, 19,0.3); */
+        color:#DD00FF; /* RGB 0-9 A-F */
+        color:rgb(10,34,255);
+        /* opacity: 0.5; */
+         /* #0096FF	rgb(0, 150, 255) for blue shade - Bright blue*/
+      
+}
+.stitle{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    color:#3232c1;
+}
+/* stories settings*/
+    .stories{
+        /* background-color: #caf79d; */
+        padding:20px;
+    }
+    .htext{
+        text-decoration: none;
+        color:red;
+        font-size:40px;
+    }
+/* end of stories setings */
+
+/* featured settings*/
+.featured{
+    background-color: #f3f396;
+    padding:20px;
+}
+
+/* end of feartured setings */
+/* video section */
+.siteVideo{
+    height:500px;
+    background-color: #caee95;
+}
+/* end of video section */
+/* lifestyle section */
+.lifeStyle{
+    height:500px;
+    background-color: #a495ee;
+}
+/* end of lifestyle section */
+.footerSettings{
+    width:80%;
+    height:100px;
+    background-color: #cececd;
+    margin:auto;
+}
+/* gray, blue, yellow */
