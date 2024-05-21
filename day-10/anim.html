@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     div{
+        position: relative;
+        height:100px;
+        width:100px;
+        background-color: red;
+      
+        animation-name: bgcolor_change;
+        animation-duration: 7s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        left:20px;
+    }
+
+    h1{
+        position: relative;
+        font-size: 40px;
+        letter-spacing: 10px;
+        animation-name: font_anim;
+        animation-duration: 7s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        top:90px;
+    }
+
+    @keyframes bgcolor_change {
+        from{
+            left:20px;
+            background-color: red;
+        }
+        to{
+            left:100px;
+            background-color: green;
+        }
+    }
+
+    @keyframes font_anim {
+        from{
+            top:90px;
+            letter-spacing: 10px;
+        }
+        to{
+            top:200px;
+            letter-spacing: 25px;
+            color:red;
+        }
+
+    }
+   </style>
+</head>
+<body>
+    <div></div>
+    <h1>Sample</h1>
+</body>
+</html>

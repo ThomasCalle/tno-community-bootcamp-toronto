@@ -14,6 +14,7 @@ body{
 .navWatch{
     background-color: black;
     color:#e8f22e;
+    position:relative;
 }
 .navWatch > a{
     text-decoration: none;
@@ -27,11 +28,14 @@ body{
     
     background-color: #e8f22e;
     text-align: center;
+    position: relative;
 }
 .navSettings > a{
     text-decoration: none;
     margin-right:40px;
     font-weight: 700;
+    color:#000000;
+    
 
 }
 .navSettings > a:hover{
@@ -41,7 +45,7 @@ body{
 }
 
 .mainSettings{
-   
+   position: relative;
     width:80%;
     margin: auto;
 
@@ -64,49 +68,93 @@ body{
     font-style: normal;
     color:#3232c1;
 }
+
 /* stories settings*/
     .stories{
-    
-        padding:20px;
+            padding:20px;
+            position:relative;
     }
-    .htext{
-        text-decoration: none;
+  
+    .storiesTitle{
+        position:relative;
+    }
+    .newsBG{
+        position:relative;
+      
+        background-size: cover;
+        width:100%;
+        /* height:100px; */
+    }
+    .aLink{
+        position:absolute;
+        font-size: 30px;
         color:red;
-        font-size:40px;
+        top:580px;
+        left:50px;
+    }
+ 
+
+    .container{
+        display:flex;
+        /* flex-direction: column; */
+        /* flex-direction:column-reverse; */
+        justify-content: center;
+        
+        flex-wrap: wrap;
+    }
+    .imgBG{
+      
+        height:320px;
+        width:40%;
+        padding:10px 10px;
+        /* padding:40px 40px; */
+        
+
+  
+        
+
     }
 /* end of stories setings */
 
 /* featured settings*/
 .featured{
+    position: relative;
     background-color: #f3f396;
-    padding:20px;
+    padding:10px 80px;
+    /* margin: 10px 60px; */
 }
-
+.News{
+    position: relative;
+}
 /* end of feartured setings */
 /* video section */
 .siteVideo{
+    position: relative;
     height:500px;
     background-color: #caee95;
 }
 /* end of video section */
 /* lifestyle section */
 .lifeStyle{
+    position: relative;
     height:500px;
     width: auto;
     background-color: #a495ee;
     background-image: url(https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) ;
-    /* background-position-x: 560px;
-    background-position-y: -900px; */
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    opacity: 0.8;
+    background-size: cover;
+    /* opacity: 0.8; */
     
 }
 /* end of lifestyle section */
 .footerSettings{
-    width:80%;
-    height:100px;
-    background-color: #cececd;
-    margin:auto;
+    width:100%;
+    /* height:100px; */
+    /* background-color: #151510; */
+    /* color:#ffffff; */
+    /* margin:auto; */
+    position:relative;
+    /* font-size: 40px; */
+    bottom: 0;
+    /* text-align: center; */
 }
 /* gray, blue, yellow */

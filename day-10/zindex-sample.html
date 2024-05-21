@@ -2,31 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         .imgBG{
             position: absolute;
-            width: 100%;
-            z-index: 4;
+            width:100%;
+            z-index: 20;
+            
+
         }
         .box{
-            height: 300px;
-            width: 400px;
+         
+
         }
         .box1{
-            background-color: blue;
-            z-index: 10;
+            height:300px;
+            width:400px;
+            position: absolute;
+            background-color: blueviolet;
+            z-index: 8;
         }
         .box2{
-            background-color: violet;
+            height:100px;
+            width:200px;
+
+            position: absolute;
+            background-color: brown;
             z-index: 15;
         }
+
     </style>
+
 </head>
 <body>
-    <img class="imgBG" src="assets\bk\newsBG.jpg" alt="">
+    <img class="imgBG" src="assets\bk\newsBG.jpg" alt="" >
     <div class="box box1">Z-index</div>
     <div class="box box2">Welcome to Z-index page</div>
 </body>

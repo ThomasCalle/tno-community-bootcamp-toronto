@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow</title>
+    <style>
+
+        body{
+            background-color: black;
+        }
+        .box{
+            font-size:80px;
+            font-weight: 900;
+            margin: 15px;
+
+            
+        }
+        /* text-shadow: [h-offset] [v-offset] [blur] [spread] color */
+        .box1{
+            color: transparent;
+            text-shadow: 2px 2px 5px  black;
+            
+        }
+        .box2{
+            color: rgb(9, 255, 0);
+            text-shadow: -2px -2px 5px  black;
+        }
+        .box3{
+            color: rgb(221, 102, 102);
+            text-shadow: 10px 10px 25px  rgb(11, 133, 13);
+        }
+        .box4{
+            color: rgb(0, 255, 72);
+           
+            text-shadow: 10px 10px 25px  rgb(11, 133, 13),-10px -10px 25px  rgb(133, 11, 44);
+        }
+        .box5{
+            color: rgb(76, 0, 255);
+            text-shadow: 5px 5px 10px  rgb(133, 60, 11),-5px -5px 10px  rgb(133, 42, 11),10px 10px 25px  rgb(11, 133, 13),-10px -10px 25px  rgb(17, 133, 11);
+        }
+        .box6{
+            color: rgb(31, 32, 23);
+            text-shadow: inset 10px 10px 25px 1px #FFFF80;
+        }
+        .box7{
+            -webkit-text-shadow:-34px 58px 128px 75px rgba(51,156,156,0.38);
+            -moz-text-shadow: -34px 58px 128px 75px rgba(51,156,156,0.38);
+            text-shadow: -34px 58px 128px 75px rgba(51,156,156,0.38);
+        }
+    </style>
+</head>
+<body>
+    <h2 class="box box1">Font Sample</h2>
+    <h2 class="box box2">Font Sample</h2>
+    <h2 class="box box3">Font Sample</h2>
+    <h2 class="box box4">Font Sample</h2>
+    <h2 class="box box5">Font Sample</h2>
+    <h2 class="box box6">Font Sample</h2>
+    <h2 class="box box7">Font Sample</h2>
+    
+</body>
+</html>

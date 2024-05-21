@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height:400px;
+            width:50%;
+            background-color: red;
+            font-size: 80px;
+            font-family: 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            color:yellow;
+        }
+        .box2{
+            height:800px;
+            width:70%;
+            background-color: chartreuse;
+            font-size: 40px;
+        }
+        @media only screen and (max-width:300px){
+            .box1{
+                background-color: rgb(113, 9, 127);
+                font-size: 25px;
+            }
+        }
+        @media only screen and (max-width:800px){
+            .box1{
+                background-color: rgb(56, 172, 176);
+                font-size: 35px;
+            }
+        }
+
+        @media print{
+            .box1{
+                color:black;
+            }
+
+        }
+
+        @media (orientation:landscape){
+           .box1{
+                height:300px;
+                width:80%;
+                background-color: rgb(24, 11, 11);
+           }
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="box box1">Sample 1</div>
+    <div class="box box2">Sample 2</div>
+</body>
+</html>

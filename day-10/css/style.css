@@ -143,9 +143,23 @@ body{
     background-image: url(https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) ;
     background-size: cover;
     /* opacity: 0.8; */
-    
+    z-index: 20;
 }
 /* end of lifestyle section */
+
+.topClass{
+    background-color: #c71b21;
+    position: relative;
+    left:0;
+   
+    height:150px;
+    width:150px;
+   
+}
+.topClass >a> img{
+    
+    width: 100%;
+}
 .footerSettings{
     width:100%;
     /* height:100px; */
@@ -155,6 +169,7 @@ body{
     position:relative;
     /* font-size: 40px; */
     bottom: 0;
+    
     /* text-align: center; */
 }
 /* gray, blue, yellow */
