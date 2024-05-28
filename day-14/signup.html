@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NB News - Home Page</title>
+    <!-- relative path -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery_script.css">
+    <link rel="stylesheet" href="css\contactpage-style.css">
+    <!-- absolute path -->
+    <!-- <link rel="stylesheet" href="C:\Users\sbegam\OneDrive - TNO\Documents\May-Cohort\week1\day4\css\style.css"> -->
+</head>
+<body>
+    <!-- header part -->
+  
+        <!-- site navigation -->
+        <nav id="" class="navWatch">
+            <img class="sLogo" src="assets\bk\weatherBkg.png" alt="">
+            <a href="">WATCH NOW</a>
+        </nav>
+        <nav id="" class="navSettings">
+            <a href="#news">NEWS</a>
+            <a href="weather.html">WEATHER</a>
+            <a href="#feature">FEATURED</a>
+            <a href="#sVideo">VIDEO</a>
+            <a href="#lStyle">LIFESTYLE</a>
+        </nav>
+ 
+
+    <main id="" class="mainSettings">
+        <div>
+        <h2 class="contactTitle">SIGNUP FORM</h2>
+       
+        <form id="formSettings" name="myform" class="cformSettings" action="signup.html" onsubmit="return validate()"  >
+         
+          <label for="u_fname">Enter your First name</label><br>
+          <input type="text" name="user_fname" id="u_fname" ><br>
+          <label for="u_lname">Enter your Last name</label><br>
+          <input type="text" name="user_lname" id="u_lname"><br>
+          <label for="u_email">Enter your email</label><br>
+          <input type="email" name="user_email" id="u_email"><br>
+         
+          <label for="u_pwd">Enter your pwd</label><br>
+          <input type="password" name="user_email" id="u_pwd"><br>
+          <input type="submit" value="Register">
+          <div id="errorMsgs" ></div><br>
+         
+         
+        
+
+      </form>
+      <script>
+        // const errorMessageElement = document.getElementById("errorMessages");
+          // errorMessageElement.style.backgroundColor="Yellow";
+          //clearing previous error messages
+          // errorMessageElement.innerHTML="test message";
+          //client-side validation
+          function validate(){
+                  
+                  let isValid=true;
+                  let errorMsgs = [];
+
+                  const user_fname = document.getElementById("u_fname").value;
+                  const user_lname = document.getElementById("u_lname").value;
+                  const user_email = document.getElementById("u_email").value;
+                  const user_pwd = document.getElementById("u_pwd").value;
+                  const error_msg = document.getElementById("errorMsgs");
+
+                  error_msg.innerHTML="";
+                  error_msg.style.backgroundColor="Yellow";
+                  error_msg.style.color="Red";
+
+                  //name validation
+                  if(user_fname.trim() === ''){
+                            isValid=false;
+                            errorMsgs.push("First name is required");
+                        }
+                  if(user_lname.trim() === ''){
+                            isValid=false;
+                            errorMsgs.push("Last name is required");
+                        }
+                  //email regEX pattern
+                  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                  if(!emailPattern.test(user_email)){
+                            isValid=false;
+                            errorMsgs.push("Enter a valid email"); 
+                        }
+
+                   // Password length validation
+                  if (user_pwd.length < 8) {
+                           isValid = false;
+                           errorMsgs.push('Password must be at least 8 characters long.');
+                  }
+
+                  // Uppercase letter validation
+                 const upperCasePattern = /[A-Z]/;// creating pattern using RegEx and comparing with created element related variable
+                 if (!upperCasePattern.test(user_pwd)) {
+                           isValid = false;
+                            errorMsgs.push('Password must contain at least one uppercase letter.');
+                 } 
+
+                  // Lowercase letter validation
+                  const lowerCasePattern = /[a-z]/;
+                  if (!lowerCasePattern.test(user_pwd)) {
+                      isValid = false;
+                      errorMsgs.push('Password must contain at least one lowercase letter.');
+                  }
+
+                  // Digit validation
+                  const digitPattern = /[0-9]/;
+                  if (!digitPattern.test(user_pwd)) {
+                      isValid = false;
+                      errorMsgs.push('Password must contain at least one number.');
+                  }
+
+                  // Special character validation
+                  const specialCharPattern = /[!@#$%^&*(),.?":{}|<>]/;
+                  if (!specialCharPattern.test(user_pwd)) {
+                      isValid = false;
+                      errorMsgs.push('Password must contain at least one special character.');
+                  }
+
+                  if(!isValid){
+                            error_msg.innerHTML =  errorMsgs.join('<br>');
+                            
+                        }
+          return isValid;
+
+          }
+
+</script>
+        
+        </div>
+        
+ 
+    </main>
+    <footer id="" class="py-5 footerSettings">
+        <div class="container">
+            
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Customer Support</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+          
+               
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Services</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Services</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                  </div>
+                  
+          
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          
+              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2024 TNO Coding Team. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-github"></i></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter"></i></a></li>
+                </ul>
+              </div>
+       
+          </div>
+          
+    </footer>
+   
+</body>
+
+</html>

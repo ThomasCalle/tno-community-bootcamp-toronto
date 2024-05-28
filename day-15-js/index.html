@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,html{
+            box-sizing: border-box;
+        }
+        .darkMode{
+            width:100%;
+            padding:30px;
+            background-color: black;
+            color:white;
+            font-size: 30px;
+            box-sizing: border-box;
+            border: 1px solid white;
+          } 
+          .lightMode{
+            width:80%;
+            padding:30px;
+            background-color: white;
+            color:black;
+            font-size: 30px;
+            box-sizing: border-box;
+            border: 1px solid black;
+          } 
+    </style>
+</head>
+<body>
+    <p>Dark Mode/Light Mode</p>
+    <button id="btn" onclick="modeFunction()" >Dark Mode</button>
+    <div id="mode" class="lightMode">Some Text to display changes</div>
+</body>
+<script>
+    // var element = document.querySelectorAll(".lightMode");
+    //         for(var i = 0; i < element.length ; i++) {
+    //                 element[i].classList.toggle("darkMode");
+    //             }    
+    //         }
+
+    // function modeFunction(){}
+
+    // modeFunction = () => {} arrow function
+    modeFunction = () => {
+        const divElement = document.getElementById("mode");
+        const btn_mode = document.getElementById("btn");
+
+        if(divElement.classList.contains("lightMode")){//identifying class
+            divElement.classList.remove("lightMode");//removing class
+            divElement.classList.add("darkMode");//add class
+            btn_mode.innerHTML = "Light mode";
+        }else if(divElement.classList.contains("darkMode")){//identifying class
+            divElement.classList.remove("darkMode");//removing class
+            divElement.classList.add("lightMode");//add class
+            btn_mode.innerHTML = "Dark mode";
+    }
+}
+
+</script>
+</html>

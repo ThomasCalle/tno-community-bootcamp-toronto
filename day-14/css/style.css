@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+25&display=swap');
+
+
+*,html{
+    margin:0;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.navWatch{
+    background-color: black;
+    color:#e8f22e;
+    position:relative;
+}
+.navWatch > a{
+    text-decoration: none;
+    color:#e8f22e;
+}
+.sLogo{
+    height:40px;
+    width: 40px;
+}
+.navSettings{
+    
+    background-color: #e8f22e;
+    text-align: center;
+    position: relative;
+}
+.navSettings > a{
+    text-decoration: none;
+    margin-right:40px;
+    font-weight: 700;
+    color:#000000;
+    
+
+}
+.navSettings > a:hover{
+    color:#e8f22e;
+    background-color: black;
+
+}
+
+.mainSettings{
+   position: relative;
+    width:80%;
+    margin: auto;
+
+}
+.siteName{
+   
+        font-family: "Jersey 25", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        font-size: 60px;
+        text-align: center;
+     
+      
+}
+.stitle{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    color:#3232c1;
+}
+
+/* stories settings*/
+    .stories{
+            padding:20px;
+            position:relative;
+    }
+  
+    .storiesTitle{
+        position:relative;
+    }
+    .newsBG{
+        position:relative;
+      
+        background-size: cover;
+        width:100%;
+        /* height:100px; */
+    }
+    .aLink{
+        position:absolute;
+        font-size: 30px;
+        color:red;
+        top:580px;
+        left:50px;
+    }
+ 
+
+    .container{
+        display:flex;
+        /* flex-direction: column; */
+        /* flex-direction:column-reverse; */
+        justify-content: center;
+        
+        flex-wrap: wrap;
+    }
+    .imgBG{
+      
+       
+        width:40%;
+        padding:10px 10px;
+        /* padding:40px 40px; */
+        
+
+  
+        
+
+    }
+/* end of stories setings */
+
+/* featured settings*/
+.featured{
+    position: relative;
+    background-color: #f3f396;
+    padding:10px 80px;
+    /* margin: 10px 60px; */
+}
+.News{
+    position: relative;
+}
+/* end of feartured setings */
+/* video section */
+.siteVideo{
+    position: relative;
+    height:500px;
+    background-color: #caee95;
+}
+/* end of video section */
+/* lifestyle section */
+.lifeStyle{
+    position: relative;
+    height:500px;
+    width: auto;
+    background-color: #a495ee;
+    background-image: url(https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) ;
+    background-size: cover;
+    /* opacity: 0.8; */
+    z-index: 20;
+}
+/* end of lifestyle section */
+
+.topClass{
+    background-color: #c71b21;
+    position: relative;
+    left:0;
+   
+    height:150px;
+    width:150px;
+   
+}
+.topClass >a> img{
+    
+    width: 100%;
+}
+.footerSettings{
+    width:100%;
+    /* height:100px; */
+    /* background-color: #151510; */
+    /* color:#ffffff; */
+    /* margin:auto; */
+    position:relative;
+    /* font-size: 40px; */
+    bottom: 0;
+    
+    /* text-align: center; */
+}
+/* gray, blue, yellow */

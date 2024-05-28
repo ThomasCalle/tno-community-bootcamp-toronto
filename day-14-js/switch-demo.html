@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Finding the day</h2>
+    <input type="text" name="" id="userInput">
+    <button onclick="dayFinder()">Find Day</button>
+    <br><span id="res" class="resDay"></span>
+ 
+</body>
+<script>
+    let res = document.getElementById("res");
+
+
+    function dayFinder(){
+        //text - info come as string
+        let user_input = document.getElementById("userInput").value;
+        // res.style.color="yellow";
+        // res.style.backgroundColor="blue";
+        res.setAttribute("style","color:yellow;background-color:blue");
+        //parse the input to integer
+        switch(parseInt(user_input)){
+            case 1: 
+             
+                res.innerHTML = "It's Monday";
+                break;
+            case 2:
+        
+                res.innerHTML = "It's Tuesday";
+                break;
+            case 3:
+        
+                res.innerHTML = "It's wednesday";
+                break;
+            case 4:
+       
+                 res.innerHTML = "It's Thursday";
+                break;
+            case 5:
+        
+                res.innerHTML = "It's Friday";
+                break;
+            case 6:
+        
+                res.innerHTML = "It's saturday";
+                break;
+            case 7:
+        
+                res.innerHTML = "It's Sunday";
+                break;
+            default:
+                res.innerHTML = "Please enter between 1 - 7";
+                // res.style.color="red";
+                // res.style.backgroundColor="yellow";
+                res.style.cssText="color:red; background-color:yellow";
+        }
+
+    }
+
+</script>   
+</html>
